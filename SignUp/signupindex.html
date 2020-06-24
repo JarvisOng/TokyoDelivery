@@ -18,13 +18,13 @@
 
 	<form id="validationform" method="post" action="">
 		<label for="name">名前</label>
-		<input id="name" class="input-style input-width" type="username" name="username" placeholder="名前をご入力ください" value="<?php print (htmlspecialchars($_POST['username'],ENT_QUOTES)); ?>">
+		<input id="name" class="input-style input-width" type="username" name="username" placeholder="名前をご入力ください">
 
 　      <label for="email">メールアドレス</label>
-        <input  id="email" class="input-style input-width" type="email" name="email" placeholder="メールアドレスをご入力ください" value="<?php print (htmlspecialchars($_POST['email'],ENT_QUOTES)); ?>">
+        <input  id="email" class="input-style input-width" type="email" name="email" placeholder="メールアドレスをご入力ください">
 
         <label for="pass1">パスワード</label>
-        <input id="pass1" class="input-style input-width" input="input-width" type="password" name="password" placeholder="パスワードをご入力ください" value="<?php print (htmlspecialchars($_POST['pass1'],ENT_QUOTES)); ?>">
+        <input id="pass1" class="input-style input-width" input="input-width" type="password" name="password" placeholder="パスワードをご入力ください">
 
         <button id="submitButton" class="input-style" type="submit" name="submit">新規登録</button> 
 
