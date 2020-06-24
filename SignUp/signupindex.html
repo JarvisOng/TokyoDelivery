@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>BigFamilyデリバリー</title>
+	<meta name="description" content="東京宅配フードサイト">
+	<link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+    	<img class="logo" src="../image/foodlogo.png" alt="delivery-logo">
+    </header>
+</div>
+　
+
+<div id="container">
+
+	<form id="validationform" method="post" action="">
+		<label for="name">名前</label>
+		<input id="name" class="input-style input-width" type="username" name="username" placeholder="名前をご入力ください" value="<?php print (htmlspecialchars($_POST['username'],ENT_QUOTES)); ?>">
+
+　      <label for="email">メールアドレス</label>
+        <input  id="email" class="input-style input-width" type="email" name="email" placeholder="メールアドレスをご入力ください" value="<?php print (htmlspecialchars($_POST['email'],ENT_QUOTES)); ?>">
+
+        <label for="pass1">パスワード</label>
+        <input id="pass1" class="input-style input-width" input="input-width" type="password" name="password" placeholder="パスワードをご入力ください" value="<?php print (htmlspecialchars($_POST['pass1'],ENT_QUOTES)); ?>">
+
+        <button id="submitButton" class="input-style" type="submit" name="submit">新規登録</button> 
+
+        <br>
+       
+
+    </form>   
+       
+        <div id="error">
+        
+        </div>
+   
+　　</div>　
+    <footer>
+        <h3>copyright (C) 2019 BigFamily food Delivery. All Right Reserved.</h3>
+    </footer>
+</div>
+
+</body>
+</html>
